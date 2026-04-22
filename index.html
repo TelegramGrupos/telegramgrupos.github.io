@@ -42,12 +42,44 @@
       padding: 0 20px;
       line-height: 1.5;
     }
+
+    /* BOTÕES LADO A LADO */
+    .botoes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .botao-img {
+      width: 160px;
+      max-width: 40%;
+      border-radius: 10px;
+    }
+
+    /* TEXTO EXPLICATIVO */
+    .explicacao-titulo {
+      margin-top: 40px;
+      font-size: 20px;
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    .explicacao-texto {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #ccc;
+      padding: 0 25px;
+      line-height: 1.6;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <!-- BANNER CLICÁVEL -->
+  <!-- BANNER -->
   <div class="topo">
     <a href="./">
       <img src="banner_topo_001.png" alt="TelegramGrupos" class="banner">
@@ -62,7 +94,28 @@
   <!-- SUBTÍTULO -->
   <div class="subtitulo">
     Grupos e canais organizados por categoria!<br>
-    Zero propaganda e livre de virus
+    Zero propaganda e livre de vírus
+  </div>
+
+  <!-- BOTÕES -->
+  <div class="botoes">
+
+    <!-- BOTÃO ESQUERDA -->
+    <img src="botao_ver_grupos_001.png" alt="Ver Grupos" class="botao-img">
+
+    <!-- BOTÃO DIREITA -->
+    <img src="botao_ver_canais_001.png" alt="Ver Canais" class="botao-img">
+
+  </div>
+
+  <!-- EXPLICAÇÃO -->
+  <div class="explicacao-titulo">
+    A diferença de canal para grupos
+  </div>
+
+  <div class="explicacao-texto">
+    <strong>Grupos:</strong> interação entre membros, todos podem conversar.<br>
+    <strong>Canais:</strong> apenas administradores publicam conteúdo.
   </div>
 
 </body>
