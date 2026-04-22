@@ -58,12 +58,12 @@
       border-radius: 10px;
     }
 
-    /* BLOCO EXPLICAÇÃO */
+    /* EXPLICAÇÃO (AGORA ALINHADA MAIS À DIREITA) */
     .explicacao-container {
-      max-width: 420px;
-      margin: 40px auto 0;
+      margin-top: 40px;
       text-align: left;
-      padding-left: 20px; /* deslocamento para direita */
+      padding-left: 80px; /* >>>>>> AQUI ESTÁ O DESLOCAMENTO */
+      padding-right: 20px;
     }
 
     .explicacao-titulo {
@@ -90,14 +90,14 @@
       font-weight: bold;
     }
 
-    /* RODAPÉ */
+    /* RODAPÉ FULL WIDTH */
     .rodape {
-      max-width: 600px;
-      margin: 60px auto 40px;
+      margin-top: 60px;
       font-size: 14px;
       color: #888;
       line-height: 1.6;
       padding: 0 20px;
+      text-align: left; /* NÃO CENTRALIZADO */
     }
 
   </style>
@@ -108,7 +108,7 @@
   <!-- BANNER -->
   <div class="topo">
     <a href="./">
-      <img src="banner_topo_001.png" alt="TelegramGrupos" class="banner">
+      <img src="banner_topo_001.png" class="banner">
     </a>
   </div>
 
@@ -131,6 +131,7 @@
 
   <!-- EXPLICAÇÃO -->
   <div class="explicacao-container">
+
     <div class="explicacao-titulo">
       A diferença de canal para grupos
     </div>
@@ -139,6 +140,7 @@
       <span class="grupo">Grupos:</span> todos podem conversar e interagir.<br><br>
       <span class="canal">Canais:</span> apenas administradores publicam conteúdo.
     </div>
+
   </div>
 
   <!-- RODAPÉ SEO -->
