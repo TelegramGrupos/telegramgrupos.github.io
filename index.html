@@ -43,7 +43,7 @@
       line-height: 1.5;
     }
 
-    /* BOTÕES LADO A LADO */
+    /* BOTÕES */
     .botoes {
       display: flex;
       justify-content: center;
@@ -58,20 +58,36 @@
       border-radius: 10px;
     }
 
-    /* TEXTO EXPLICATIVO */
+    /* BLOCO EXPLICAÇÃO */
+    .explicacao-container {
+      max-width: 360px; /* controla largura entre botões */
+      margin: 40px auto 0;
+      text-align: left;
+      padding: 0 10px;
+    }
+
     .explicacao-titulo {
-      margin-top: 40px;
       font-size: 20px;
       color: #00ffcc;
       font-weight: bold;
+      margin-bottom: 15px;
     }
 
     .explicacao-texto {
-      margin-top: 15px;
       font-size: 16px;
       color: #ccc;
-      padding: 0 25px;
       line-height: 1.6;
+    }
+
+    /* CORES ESPECIAIS */
+    .grupo {
+      color: #0088cc; /* azul Telegram */
+      font-weight: bold;
+    }
+
+    .canal {
+      color: #00ffcc; /* verde */
+      font-weight: bold;
     }
 
   </style>
@@ -99,23 +115,22 @@
 
   <!-- BOTÕES -->
   <div class="botoes">
-
-    <!-- BOTÃO ESQUERDA -->
     <img src="botao_ver_grupos_001.png" alt="Ver Grupos" class="botao-img">
-
-    <!-- BOTÃO DIREITA -->
     <img src="botao_ver_canais_001.png" alt="Ver Canais" class="botao-img">
-
   </div>
 
   <!-- EXPLICAÇÃO -->
-  <div class="explicacao-titulo">
-    A diferença de canal para grupos
-  </div>
+  <div class="explicacao-container">
 
-  <div class="explicacao-texto">
-    <strong>Grupos:</strong> interação entre membros, todos podem conversar.<br>
-    <strong>Canais:</strong> apenas administradores publicam conteúdo.
+    <div class="explicacao-titulo">
+      A diferença de canal para grupos
+    </div>
+
+    <div class="explicacao-texto">
+      <span class="grupo">Grupos:</span> todos podem conversar e interagir.<br><br>
+      <span class="canal">Canais:</span> apenas administradores publicam conteúdo.
+    </div>
+
   </div>
 
 </body>
