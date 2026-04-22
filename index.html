@@ -10,21 +10,32 @@
       margin: 0;
       padding: 0;
       background: #000;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .topo {
+      padding: 20px 0;
     }
 
     .banner {
-      width: 100%;
+      width: 300px; /* TAMANHO CONTROLADO */
+      max-width: 90%;
       display: block;
+      margin: 0 auto;
+      border-radius: 10px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- BANNER CLICÁVEL -->
-  <a href="./">
-    <img src="banner_topo_001.png" alt="TelegramGrupos" class="banner">
-  </a>
+  <!-- BANNER CENTRALIZADO E CLICÁVEL -->
+  <div class="topo">
+    <a href="./">
+      <img src="banner_topo_001.png" alt="TelegramGrupos" class="banner">
+    </a>
+  </div>
 
 </body>
 </html>
